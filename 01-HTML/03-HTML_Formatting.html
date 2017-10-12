@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>HTML Formatting</h1>
+   
+    <div>
+        <p>
+            <b>Lorem ipsum dolor sit amet,</b> consectetur adipisicing elit. <i>Dolor sint eveniet in praesentium a,</i> consectetur porro facere quidem eligendi odio saepe. Eveniet id iste maxime nihil assumenda eaque, consequatur repellendus!
+            <u>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum, perspiciatis, </u>voluptatum delectus voluptatem corporis facilis quisquam voluptas sequi repellendus assumenda numquam soluta iste autem recusandae architecto saepe suscipit velit!
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. <em>Dolor sint eveniet in praesentium a,</em> consectetur porro facere quidem eligendi odio saepe. Eveniet id iste maxime nihil assumenda eaque, consequatur repellendus!
+            <ins>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum, perspiciatis, </ins>voluptatum delectus voluptatem corporis facilis quisquam voluptas sequi repellendus assumenda numquam soluta iste autem recusandae architecto saepe suscipit velit!
+        </p>
+    </div>
+    
+    <pre>
+    <code>
+#include &lt;iostream&gt;
+using namespace std;
+ 
+#include &lt;iomanip&gt;
+using std::setw;
+ 
+int main () {
+
+   int n[ 10 ]; // n is an array of 10 integers
+ 
+   // initialize elements of array n to 0          
+   for ( int i = 0; i &lt; 10; i++ ) {
+      n[ i ] = i + 100; // set element at location i to i + 100
+   }
+   cout &lt;&lt; "Element" &lt;&lt; setw( 13 ) &lt;&lt; "Value" &lt;&lt; endl;
+ 
+   // output each array element's value                      
+   for ( int j = 0; j &lt; 10; j++ ) {
+      cout &lt;&lt; setw( 7 )&lt;&lt; j &lt;&lt; setw( 13 ) &lt;&lt; n[ j ] &lt;&lt; endl;
+   }
+ 
+   return 0;
+}
+    </code>
+    
+       </pre>
+       
+       <h2>Copyright &copy;</h2>
+       <h2>Trademark &trade;</h2>
+       
+       <h3>10<sup>2</sup> = 100</h3>
+       <h3>H<sub>2</sub>O</h3>
+</body>
+</html>
