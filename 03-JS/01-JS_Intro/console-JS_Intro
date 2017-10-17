@@ -1,0 +1,98 @@
+a = 10
+10
+a = 10.5
+10.5
+a = "Hello"
+"Hello"
+a = true
+true
+typeof(a)
+"boolean"
+a = 10
+10
+typeof(a)
+"number"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+a = 12
+12
+b = 11
+11
+a+b]a-b
+VM507:1 Uncaught SyntaxError: Unexpected token ]
+a+b
+23
+a-b
+1
+a/b
+1.0909090909090908
+a*b
+132
+a
+12
+b = "12"
+"12"
+a+b
+"1212"
+b+a
+"1212"
+c = 10
+10
+a+b+c
+"121210"
+c+b+a
+"101212"
+c+a+b
+"2212"
+c*a+b
+"12012"
+a
+12
+b
+"12"
+c
+10
+a == b
+true
+a === b
+false
+function add(){
+	x = 11;
+	y = 12;
+	console.log(x+y)
+}
+undefined
+add()
+VM670:4 23
+undefined
+var i = "Hi"
+undefined
+var j = "JS"
+undefined
+i
+"Hi"
+j
+"JS"
+x
+11
+y
+12
+function add(){
+	var x1 = 11;
+	var y1 = 12;
+	console.log(x1+y1)
+}
+undefined
+add()
+VM734:4 23
+undefined
+x1
+VM750:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM750:1
