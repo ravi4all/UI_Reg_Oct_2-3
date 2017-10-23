@@ -1,0 +1,84 @@
+var str = "Hello this is javascript"
+undefined
+str.toLowerCase()
+"hello this is javascript"
+str.toUpperCase()
+"HELLO THIS IS JAVASCRIPT"
+str.charAt(2)
+"l"
+str.charAt(1)
+"e"
+str.charAt(0)
+"H"
+str.indexOf('o')
+4
+str.lastIndexOf('i')
+21
+str.split(' ')
+(4) ["Hello", "this", "is", "javascript"]
+str
+"Hello this is javascript"
+str.slice(2,5)
+"llo"
+str.length()
+VM656:1 Uncaught TypeError: str.length is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM656:1
+str.length
+24
+str.replace('Hello', 'Bye')
+"Bye this is javascript"
+str
+"Hello this is javascript"
+Math.abs(-5)
+5
+Math.pow(2,4)
+16
+Math.sqrt(16)
+4
+Math.sin(-1)
+-0.8414709848078965
+Math.ceil(2.6)
+3
+Math.floor(2.6)
+2
+Math.round(2.6)
+3
+Math.ceil(2.3)
+3
+Math.random()
+0.3506679586994579
+Math.random()
+0.31748229903083747
+Math.random()
+0.6602159437717032
+Math.random()
+0.9502652151152198
+Math.random()
+0.6666544269662507
+Math.random()
+0.06055395718576562
+Math.random() * 10
+3.4998023816566715
+Math.random() * 10
+4.03318895592821
+Math.random() * 10
+8.11421423677546
+Math.random() * 10
+3.582791122990696
+Math.random() * 10
+9.643769944819539
+Math.random() * 10
+6.792099416111695
+Math.random() * 10
+9.764870805385158
+Math.random() * 10
+0.17320546360457767
+Math.random() * 100
+73.52041279823342
+Math.random() * 100
+68.29491922334978
+Math.random() * 100
+74.7328858212593
+Math.random() * 100
+27.500537448325414

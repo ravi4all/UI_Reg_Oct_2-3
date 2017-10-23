@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>String Demo</h1>
+   
+   <input type="text" id="box_1">
+   <button onclick="stringOpr()">Click Here</button>
+   <h2 id="output"></h2>
+   
+   <script>
+       function stringOpr(){
+           var str = document.getElementById("box_1").value;
+           var output = document.getElementById("output");
+           output.innerHTML = str.toUpperCase();
+           output.appendChild("<h2>"+ str.toLowerCase() +"</h2")
+       }
+    </script>
+    
+</body>
+</html>

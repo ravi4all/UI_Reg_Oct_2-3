@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function showName(){
+            var userName = prompt("Enter your name");
+            document.getElementById("name").innerHTML = userName;
+        }
+    </script>
+</head>
+<body>
+   
+   <h1>Prompt Box</h1>
+   
+   <button onclick="showName()">Click Here</button>
+    <h2>Hello <span id="name"></span></h2>
+</body>
+</html>
