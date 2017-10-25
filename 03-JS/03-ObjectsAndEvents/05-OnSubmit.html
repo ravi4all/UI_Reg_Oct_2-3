@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>OnSubmit</h1>
+   
+   <form action="01-Blur.html" onsubmit="validation()">
+       Enter Name
+       <input type="text" id="box_1">
+       Enter Password
+       <input type="password" id="box_2">
+       <input type="submit">
+   </form>
+    
+    <script>
+        function validation(){
+            var box_1 = document.getElementById("box_1");
+            var box_2 = document.getElementById("box_2");
+            if(box_1.value == "" || box_2.value == ""){
+                box_1.style.border = "1px solid red";
+                box_2.style.border = "1px solid red";
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

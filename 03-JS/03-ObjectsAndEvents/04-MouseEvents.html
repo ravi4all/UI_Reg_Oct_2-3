@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("http://www.clker.com/cliparts/S/2/t/Q/C/M/number-3-in-a-circle.svg.thumb.png");
+            /*background-position: 100px 100px;*/
+            background-repeat: no-repeat;
+        }
+        #div_1 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body onmousemove="moveBackground(this)">
+   
+   <h1>Mouse Events</h1>
+   <h1>Mouse Events</h1>
+   <h1>Mouse Events</h1>
+   
+   <div id="div_1" onmouseover="changeImage(this)" onmouseout="changeImage2(this)">
+       <img src="../../images/hulk5-18463.gif" alt="">
+       <!--<img src="../../images/hulk-bigpunch.gif" alt="">-->
+   </div>
+    
+    <script>
+        function moveBackground(obj){
+            /*console.log("Move Background Working...");*/
+            x = event.clientX;
+            y = event.clientY;
+            /*console.log(x,y);*/
+            obj.style.backgroundPosition = (x-50) + "px" + " " + (y-50) + "px";
+        }
+        function changeImage(obj){
+            obj.innerHTML = '<img src="../../images/hulk-bigpunch.gif">';
+        }
+        function changeImage2(obj){
+            obj.innerHTML = '<img src="../../images/hulk5-18463.gif">';
+        }
+    </script>
+</body>
+</html>
