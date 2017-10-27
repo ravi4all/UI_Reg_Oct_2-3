@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+ul li:nth-child(even) {
+    background-color: lightslategray;
+}
+ul li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+ul li.selected {
+    background-color: lightcoral;
+    text-decoration: line-through;
+}
