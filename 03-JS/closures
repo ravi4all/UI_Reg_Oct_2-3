@@ -1,0 +1,87 @@
+function counter(x){
+	return x+= 1
+}
+undefined
+counter(1)
+2
+counter(1)
+2
+function outer(x){
+	function inner(){
+		return x += 1
+	}
+}
+undefined
+outer(2)
+undefined
+inner()
+VM166:1 Uncaught ReferenceError: inner is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM166:1
+function outer(x){
+	function inner(){
+		return x += 1
+	}
+inner()
+}
+undefined
+outer(2)
+undefined
+function outer(x){
+	function inner(){
+		return x += 1
+	}
+	return inner()
+}
+undefined
+outer(2)
+3
+outer(2)
+3
+outer(2)
+3
+outer(2)
+3
+outer(2)
+3
+function outer(x){
+	function inner(){
+		return x += 1
+	}
+	return inner
+}
+undefined
+outer(2)
+ƒ inner(){
+		return x += 1
+	}
+c = outer(2)
+ƒ inner(){
+		return x += 1
+	}
+c
+ƒ inner(){
+		return x += 1
+	}
+c()
+3
+c()
+4
+c()
+5
+c()
+6
+c()
+7
+c()
+8
+outer(2)
+ƒ inner(){
+		return x += 1
+	}
+outer(2)()
+3
+outer(2)()
+3
+outer(2)()
+3

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>AJAX Call</h1>
+   
+   <button onclick="callme()">Click Here</button>
+   
+   <div id="div_1">
+       
+   </div>
+   
+   
+   <script src="jquery-3.2.1.min.js"></script>
+   <script>
+       function one(){
+           console.log("One function");
+       }
+       function two(){
+           console.log("Two function");
+       }
+       function three(){
+           console.log("Three function");
+       }
+       function four(){
+           console.log("Four function");
+       }
+       function five(){
+           $.get("data.html", function(data){
+               $("#div_1").html(data);
+               for(var i = 0; i<10000; i++){
+                   console.log("Hi");
+               }
+               console.log("Five function");
+           });
+       }
+       function six(){
+           console.log("Six function");
+       }
+       function seven(){
+           $.get("data.html", function(data){
+               /*$("#div_1").html(data);*/
+               for(var i = 0; i<100; i++){
+                   console.log("Hello");
+               }
+               console.log("Seven function");
+           });
+       }
+       function eight(){
+           console.log("Eight function");
+       }
+       
+       function callme(){
+           one()
+           two()
+           three()
+           four()
+           five()
+           six()
+           seven()
+           eight()
+       }
+    </script> 
+</body>
+</html>
