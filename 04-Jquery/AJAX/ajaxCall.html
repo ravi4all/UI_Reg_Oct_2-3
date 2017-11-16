@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Ajax Call</h1>
+   
+   <button id="btn">Show Data</button>
+   
+   <div id="data">
+       <ul id="datalist">
+           
+       </ul>
+   </div>
+   
+   <script src="../jquery-3.2.1.min.js"></script>
+   <script>
+       $("#btn").click(function(){
+           $.getJSON("data.json", function(data){
+            /*$("#data").html(data);
+               console.log(data);*/
+               /*var arr = data;
+               $("#data").html(arr[0].id + " " + arr[0].name + '<img src=' + arr[0].image+ '/>')*/
+               var dataList = data;
+               dataList.forEach(function(obj){
+                   var li = document.createElement('li');
+                   li.innerHTML = obj.id + " " + obj.name
+                   var img = document.createElement('img');
+                   img.setAttribute('src', obj.image);
+                   li.appendChild(img);
+                   $("#datalist").append(li);
+               })
+        })
+       })
+    </script> 
+</body>
+</html>

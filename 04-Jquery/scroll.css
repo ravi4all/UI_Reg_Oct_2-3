@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    text-align: center;
+}
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+    background-color: lightsalmon;
+}
+#header.active {
+    background-color: lightcoral;
+    padding: 0px;
+}
+
+#content {
+    margin-top: 150px;
+}
