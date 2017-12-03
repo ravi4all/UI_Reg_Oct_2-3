@@ -1,0 +1,35 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+ul li {
+    display: inline-block;
+    margin: 0px 15px;
+    text-align: center;
+    background-color: lightcoral;
+    width: 10%;
+    position: relative;
+}
+ul li a {
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    display: none;
+}
+
+.dropdown ul li {
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
