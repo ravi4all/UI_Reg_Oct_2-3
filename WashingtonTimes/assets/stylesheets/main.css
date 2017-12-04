@@ -1,0 +1,153 @@
+body {
+    margin: 0px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+/* Header */
+#header {
+    background-color: #040404;
+}
+#header .logo  {
+    width: 25%;
+    background-color: #A9091F;
+    padding: 0px 15px;
+}
+#header .logo img{
+    width: 85%;
+}
+#header .logo a {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#header .social-links {
+    width: 13%;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Main Navigation */
+#main-navigation {
+    width: 55%;
+    margin-left: 15px;
+}
+#main-navigation ul li {
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px -2px;
+    border-right: 1px solid #363636;
+}
+#main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+#main-navigation ul li a:hover {
+    background-color: #A9091F;
+}
+
+#main-navigation ul li.dropdown {
+    position: relative;
+}
+
+#main-navigation ul li.dropdown:after {
+    content: "";
+    border: 4px solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent; 
+    border-bottom: none;
+    position: absolute;
+    top: 45%;
+    right: 2px;
+}
+
+.social-links {
+    padding: 15px 0px;
+}
+.social-links ul li {
+    display: inline-block;
+}
+.social-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Content */
+#content {
+    padding: 20px;
+}
+
+/* Sidebar_1 */
+#sidebar_1 {
+    width: 27%;
+}
+#sidebar_1 .image {
+    width: 28%;
+}
+#sidebar_1 .image img {
+    width: 100%;
+}
+#sidebar_1 .news {
+    width: 65%;
+    margin-left: 12px;
+}
+#sidebar_1 .news h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+#sidebar_1 .news a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+/* Main */
+#main {
+    width: 48%;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar_2 */
+#sidebar_2 {
+    width: 23%;
+}
+
+/* Footer */
+#footer {
+
+}
