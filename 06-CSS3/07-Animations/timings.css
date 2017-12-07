@@ -1,0 +1,52 @@
+body {
+    overflow: hidden;
+}
+div {
+    position: absolute;
+    bottom: 0px;
+    width: 10%;
+    animation: cars 8s infinite;
+}
+img {
+    width: 70%;
+}
+#div_1 {
+    /* animation-timing-function: ease; */
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#div_2 {
+    left: 22%;
+    animation-timing-function: ease-in;
+}
+#div_3 {
+    left: 44%;
+    animation-timing-function: ease-in-out;
+}
+#div_4 {
+    left: 66%;
+    animation-timing-function: linear;
+}
+#div_5 {
+    left: 88%;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes cars {
+    0% {
+        bottom: 0px;
+        transform: rotate(0deg);
+    }
+    30% {
+        bottom: 50%;
+        transform: rotate(0deg);
+    }
+    75% {
+        bottom: 80%;
+        transform: rotate(180deg);
+    }
+    100% {
+        bottom: 0%;
+        transform: rotate(180deg);
+    }
+}
