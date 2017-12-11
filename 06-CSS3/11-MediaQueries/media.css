@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+}
+#header {
+    display: flex;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: space-between;
+}
+
+#header .logo {
+    width: 30%;
+}
+#header img {
+    width: 100%;
+}
+
+#main-nav {
+    padding-top: 12px;
+}
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+#main-nav ul li {
+    margin: 0px 15px;
+}
+#main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.menu-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+.menu-btn .line {
+    display: block;
+    width: 25px;
+    border: 2px solid red;
+    margin-bottom: 3px;
+    transition-duration: 1s;
+}
+.open-menu {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    height: 14px;
+    width: 24px;
+    opacity: 0;
+    z-index: 1;
+}
+
+@media(max-width: 1024px){
+    #main-nav ul li a {
+        font-size: 16px;
+    }
+}
+@media(max-width:992px) {
+    .menu-btn {
+        display: block;
+    }
+    #main-nav ul li {
+        margin-bottom: 15px;
+    }
+    #main-nav ul {
+        /* display: none; */
+        display: block;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition-duration: 1s;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 37px;
+        text-align: center;
+        padding: 30px 0px;
+        background-color: rgba(255,0,0,0.6);
+    }
+    #main-nav .open-menu:checked ~ ul {
+        /* display: block; */
+        transform: scale(1,1);
+    }
+    #main-nav .open-menu:checked ~ .menu-btn .line:nth-child(2) {
+        opacity: 0;
+    }
+    #main-nav .open-menu:checked ~ .menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    #main-nav .open-menu:checked ~ .menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -13px;
+    }
+}
+
+
+#parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.col {
+    width: 28%;
+    background-color: lightgray;
+    margin: 0px 15px 20px;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+@media(max-width:1200px){
+    .col {
+        width: 27%;
+    }
+}
+@media(max-width:992px){
+    .col {
+        width: 42%;
+        background-color: lightcoral;
+    }
+}
+@media(max-width:767px) {
+    #parent {
+        display: block;
+    }
+    .col {
+        width: 80%;
+    }
+}
+
+@media(min-width:768px) and (max-width: 992px) {
+    body {
+        background-color: lightpink;
+    }
+}
